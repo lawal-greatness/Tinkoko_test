@@ -1,0 +1,25 @@
+extends baseEmail
+
+block content
+  .bg
+    img(src='https://res.cloudinary.com/paapii3d/image/upload/v1661624496/1661624494796.png'  alt='logo')
+    
+  h3 Hi Customer Care,
+  p There's a new Quote from a customer. Details are shown below. Please treat and update in your admin panel.
+  p Customer Name: #{personName}
+  p Phone: #{phone}
+  p Email: #{email}
+  p Address: #{address}
+  p City: #{city}
+  p Description: #{description}
+  p Quote: 
+  ul
+    each val, index in quote
+      li= val.qty + ' '+ val.metrics + ' ' + val.item
+
+  
+  p Customer Success
+  p Tinkoko Team
+
+
+

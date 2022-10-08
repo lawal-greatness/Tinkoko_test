@@ -1,0 +1,29 @@
+extends baseEmail
+
+block content
+  .bg
+    img(src='https://res.cloudinary.com/paapii3d/image/upload/v1661624496/1661624494796.png'  alt='logo')
+  p Hi #{firstName},
+  p Congratulations you have received a referral bonus of 500 Naira. This will help in your transactions
+  p Enjoy seamless Buying and Selling on Tinkoko.com
+  p Visit the learning center on how to use your bonus.
+
+  p Thank you for using Tinkoko.com
+  
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Visit your account
+  p You can also copy the url and paste in your browser.
+  p #{url}
+  p - Awl Thompson
+  p Customer Success
+  p Tinkoko
+
+
+

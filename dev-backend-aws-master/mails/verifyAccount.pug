@@ -1,0 +1,26 @@
+extends baseEmail
+
+block content
+  .bg
+    img(src='https://res.cloudinary.com/paapii3d/image/upload/v1661624496/1661624494796.png'  alt='logo')
+  p Hi #{firstName},
+  p Thank you for signing up with us at Tinkoko.com, we're glad to have you.
+
+  p To proceed to using tinkoko.com and all its services, please verify your account by providing the token you have received. 
+  
+  //- table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+  //-   tbody
+  //-     tr
+  //-       td(align='left')
+  //-         table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+  //-           tbody
+  //-             tr
+  //-               td
+  //-                 a(href=`${url}`, target='_blank') Verify Your Account
+  //- p You can also copy the url and paste in your browser.
+  p Your Activation token is
+  .titleNew 
+    p #{url}
+
+  p Customer Success
+  p Tinkoko
